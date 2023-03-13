@@ -4,14 +4,7 @@ m = 3, n = 4.
 1 -3,3 8 -9,9
 8 7,8 -7,1 9 */
 
-// int rows = ReadInt("Введите количество строк: ");
-// int colums = ReadInt("Введите количество столбцов: ");
-// double[,] numbers = new double[rows, colums];
-
-// FillArray2D(numbers);
-// PrintArray2D(numbers);
-
-// void FillArray2D(double[,] array)
+void Create2DRandomArray(double[,] array)
 // {
 //     for (int i = 0; i < array.GetLength(0); i++)
 //     {
@@ -20,9 +13,10 @@ m = 3, n = 4.
 //             array[i, j] = new Random().NextDouble();
 //         }
 //     }
+
 // }
 
-// void PrintArray2D(double[,] array)
+// void Show2DArray(double[,] array)
 // {
 //     for (int i = 0; i < array.GetLength(0); i++)
 //     {
@@ -35,11 +29,14 @@ m = 3, n = 4.
 //     Console.WriteLine();
 // }
 
-// int ReadInt(string message)
-// {
-//     Console.Write(message);
-//     return Convert.ToInt32(Console.ReadLine());
-// }
+// Console.WriteLine("Input number of rows: ");
+// int rows = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Input number of columns: ");
+// int columns = Convert.ToInt32(Console.ReadLine());
+// double[,] numbers = new double[rows, columns];
+
+// Create2DRandomArray(numbers);
+// Show2DArray(numbers);
 
 
 /*Задача 50. Напишите программу, которая на вход принимает позиции элемента в двумерном массиве, и возвращает значение этого элемента или же указание, что такого элемента нет. Во вводе первая цифра - номер строки, вторая - столбца. Цифры не больше 9.
@@ -49,25 +46,7 @@ m = 3, n = 4.
 8 4 2 4
 17 -> такого числа в массиве нет  */
 
-// int rows = ReadInt("Введите количество строк: ");
-// int colums = ReadInt("Введите количество столбцов: ");
-// int[,] numbers = new int[rows, colums];
-// int idRows = ReadInt("Введите строку: ");
-// int idColums = ReadInt("Введите столбец: ");
-
-// FillArray2D(numbers);
-// PrintArray2D(numbers);
-
-// if ((idRows < rows)&(idColums < colums))
-// {
-//     Console.WriteLine(numbers[idRows, idColums]);
-// }
-// else
-// {
-//     Console.WriteLine("Такого числа в массиве нет");
-// }
-
-// void FillArray2D(int[,] array)
+void Create2DRandomArray(int[,] array)
 // {
 //     for (int i = 0; i < array.GetLength(0); i++)
 //     {
@@ -78,7 +57,7 @@ m = 3, n = 4.
 //     }
 // }
 
-// void PrintArray2D(int[,] array)
+// void Show2DArray(int[,] array)
 // {
 //     for (int i = 0; i < array.GetLength(0); i++)
 //     {
@@ -91,11 +70,26 @@ m = 3, n = 4.
 //     Console.WriteLine();
 // }
 
+// Console.WriteLine("Input number of rows: ");
+// int rows = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Input number of columns: ");
+// int columns = Convert.ToInt32(Console.ReadLine());
+// int[,] numbers = new int[rows, columns];
+// Console.WriteLine("Input number of idRows: ");
+// int idRows = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Input number of idColumns: ");
+// int idColumns = Convert.ToInt32(Console.ReadLine());
 
-// int ReadInt(string message)
+// Create2DRandomArray(numbers);
+// Show2DArray(numbers);
+
+// if ((idRows < rows)&(idColumns < columns))
 // {
-//     Console.Write(message);
-//     return Convert.ToInt32(Console.ReadLine());
+//     Console.WriteLine(numbers[idRows, idColumns]);
+// }
+// else
+// {
+//     Console.WriteLine("Такого числа в массиве нет");
 // }
 
 
@@ -105,12 +99,11 @@ m = 3, n = 4.
 5 9 2 3
 8 4 2 4       Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.   */
 
-// int rows = ReadInt("Введите количество строк: ");
-// int colums = ReadInt("Введите количество столбцов: ");
-// int[,] numbers = new int[rows, colums];
-
-// FillArray2D(numbers);
-// PrintArray2D(numbers);
+Console.WriteLine("Input number of rows: ");
+// int rows = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Input number of columns: ");
+// int columns = Convert.ToInt32(Console.ReadLine());
+// int[,] numbers = new int[rows, columns];
 
 // double sum = 0;
 // double result = 0;
@@ -127,9 +120,10 @@ m = 3, n = 4.
 // result = 0;
 // sum = 0;
 // }
+// Create2DRandomArray(numbers);
+// Show2DArray(numbers);
 
-
-// void FillArray2D(int[,] array)
+// void Create2DRandomArray(int[,] array)
 // {
 //     for (int i = 0; i < array.GetLength(0); i++)
 //     {
@@ -138,9 +132,10 @@ m = 3, n = 4.
 //             array[i, j] = new Random().Next(0, 9);
 //         }
 //     }
+    
 // }
 
-// void PrintArray2D(int[,] array)
+// void Show2DArray(int[,] array)
 // {
 //     for (int i = 0; i < array.GetLength(0); i++)
 //     {
@@ -151,11 +146,4 @@ m = 3, n = 4.
 //         Console.WriteLine();
 //     }
 //     Console.WriteLine();
-// }
-
-
-// int ReadInt(string message)
-// {
-//     Console.Write(message);
-//     return Convert.ToInt32(Console.ReadLine());
 // }
