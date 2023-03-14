@@ -4,7 +4,7 @@ m = 3, n = 4.
 1 -3,3 8 -9,9
 8 7,8 -7,1 9 */
 
-void Create2DRandomArray(double[,] array)
+// void Create2DRandomArray(double[,] array)
 // {
 //     for (int i = 0; i < array.GetLength(0); i++)
 //     {
@@ -46,7 +46,7 @@ void Create2DRandomArray(double[,] array)
 8 4 2 4
 17 -> такого числа в массиве нет  */
 
-void Create2DRandomArray(int[,] array)
+// void Create2DRandomArray(int[,] array)
 // {
 //     for (int i = 0; i < array.GetLength(0); i++)
 //     {
